@@ -10,7 +10,7 @@ type DispatchProps = Pick<IncrementProps, 'increment'>;
 
 function mapStateToProps(state: ApplicationState): StateProps {
   return {
-    count: state.count,
+    count: state.count
   };
 }
 
@@ -23,6 +23,6 @@ function mapDispatchToProps(dispatch: Dispatch<any>): DispatchProps {
 const ConnectedIncrement = connect(
   mapStateToProps,
   mapDispatchToProps,
-)<{}>(IncrementComponent);
+)(IncrementComponent);
 
 export default ConnectedIncrement;

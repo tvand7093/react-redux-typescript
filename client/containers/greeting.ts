@@ -24,6 +24,6 @@ function mapDispatchToProps(dispatch: Dispatch<any>): DispatchProps {
 const ConnectedGreeting = connect(
   mapStateToProps,
   mapDispatchToProps,
-)<{}>(GreetingComponent);
+)(GreetingComponent);
 
 export default ConnectedGreeting;
